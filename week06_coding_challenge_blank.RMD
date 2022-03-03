@@ -25,18 +25,18 @@ library(mgcv)
 
 #load data set "LHS_TEXAS.csv"
 ```{r include=FALSE}
-# write your code here
+data_01 <- read_csv("Data/LHS_TEXAS.csv")
 
 ```
 
 # How many observations? 
 **answer** 
->
+>  # 383 observations
 
 
 # How many variables? 
 **answer**
->
+>## 35 variables
 
 
 #we will focus on covid-19 related issues; refer to the codebook. 
@@ -47,7 +47,17 @@ library(mgcv)
 
 ```{r}
 ## your code goes here
+county_regions  <- read_csv("Data/LHS_TEXAS.csv")
+```
 
+
+```{r}
+county_regionsr<- county_regions %>%
+  filter (stusps %in% c("TX"))
+
+ftable(county_regionsr$stusps)
+
+table(county_regionsr$county)
 
 ```
 # use `table ()` function to see frequency for each county_regions. Which county_region has the biggest sample? State the name of county_region and its sample size. 
