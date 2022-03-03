@@ -63,12 +63,13 @@ table(county_regionsr$county)
 # use `table ()` function to see frequency for each county_regions. Which county_region has the biggest sample? State the name of county_region and its sample size. 
 **answer**
 >>
-
+# ALAMO , ## sample size =90
 
 # which county_region(s) has the smallest sample? State the name of county_region and its sample size:
 **answer**
 >>
-
+# There are 2 sountry_regions and they both have 1 sample size each
+## South east and Northwest region
 
 
 #since some county_regions have only 1 participant, we need to find a way to combine some regions into more general regions: 
